@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Document</title>
+</head>
+
+<body class="bg-danger-subtle">
+    <div class="container">
+        <div class="head  d-flex justify-content-center flex-column align-items-center">
+            <h1 class="my-4">Bookmarker</h1>
+        </div>
+        <div class="bookmark-body  d-flex justify-content-center flex-column align-items-center">
+            <h2>
+                Bookmark your favorite sites
+            </h2>
+
+            <div class="mb-3 d-block w-100">
+                <label for="siteName" class="form-label"> Site Name</label>
+                <input type="text" class="form-control" id="siteName" placeholder="Bookmark Name
+                ">
+            </div>
+            <div class="mb-3 w-100">
+                <label for="siteUrl" class="form-label"> Site URL</label>
+                <input type="url" class="form-control" id="siteUrl" placeholder="Bookmark Name
+                ">
+                <div class="text-center my-5">
+                    <button class="btn bg-danger w-25" id="submitBtn">submit</button>
+                </div>
+                <table class="table text-center bg-light">
+                    <tr>
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th onclick="deleteBookmarks">Delete</th>
+                    </tr>
+                    <tbody id="tableContent"></tbody>
+                </table>
+            </div>
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
